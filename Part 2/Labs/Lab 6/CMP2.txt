@@ -1,0 +1,7 @@
+unit CMP2;
+
+interface
+
+implementation
+
+end.

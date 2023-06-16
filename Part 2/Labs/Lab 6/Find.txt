@@ -1,0 +1,11 @@
+// Finding result
+Function Find (Compare: TComp; Var A): Real;
+Var
+  I: Integer;
+  Arr: TArray Absolute A;
+begin
+  Result := Arr[low(Arr),low(Arr[low(Arr)])];
+  for I := low(Arr) + 1 to high(Arr) do
+    if Compare(Arr[I,low(Arr[low(Arr)])],Result) then
+      Result :=Arr[I,low(Arr[low(Arr)])];
+end;
